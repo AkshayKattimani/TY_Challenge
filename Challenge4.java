@@ -10,8 +10,11 @@ package com.challenge4;
 public class Challenge4 {
 	
 	public boolean isCatPlaying(boolean summer, int temperature) {
-		  if (summer) return (temperature >= 25 && temperature <= 45); 
-		  return (temperature >= 25 && temperature <= 35);
+		  if (summer) {
+			  return (temperature >= 25 && temperature <= 45);
+		  } else {
+			  return (temperature >= 25 && temperature <= 35);
+		  }
 	}
 	
 	public static void main(String[] args) {
